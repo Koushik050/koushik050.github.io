@@ -889,7 +889,7 @@
     </p>
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">VIEW PROJECTS</a>
-      <a href="/cdn-cgi/l/email-protection#e883879d9b8081839a89868f9da88f85898184c68b8785" class="btn-outline">GET IN TOUCH</a>
+      <a href="#contact" class="btn-outline">GET IN TOUCH</a>
     </div>
   </div>
   <div class="hero-stats">
@@ -935,7 +935,7 @@
       </div>
       <div class="info-row">
         <span class="info-key">EMAIL</span>
-        <span class="info-val"><a href="/cdn-cgi/l/email-protection#c3a8acb6b0abaaa8b1a2ada4b683a4aea2aaafeda0acae"><span class="__cf_email__" data-cfemail="0863677d7b6061637a69666f7d486f65696164266b6765">[email&#160;protected]</span></a></span>
+        <span class="info-val"><a href="#" class="email-link" id="about-email">koushikrangu<!-- bot -->@<!-- bot -->gmail.com</a></span>
       </div>
       <div class="info-row">
         <span class="info-key">PHONE</span>
@@ -1407,9 +1407,7 @@
     <h2 class="contact-title">Let's <span style="background: linear-gradient(135deg, var(--teal), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Connect</span></h2>
     <p class="contact-sub">Open to full-time roles, internships & collaborations</p>
     <div class="contact-links">
-      <a href="mailto:koushikrangu@gmail.com" class="contact-link">
-        <span>✉</span> koushikrangu@gmail.com
-      </a>
+      <a href="#" class="contact-link email-link" id="contact-email"><span>✉</span> <span id="email-display">koushikrangu<!-- bot -->@<!-- bot -->gmail.com</span></a>
       <a href="tel:+918074034699" class="contact-link">
         <span>📞</span> +91 8074034699
       </a>
@@ -1431,7 +1429,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursor-ring');
@@ -1500,21 +1498,36 @@
     requestAnimationFrame(drawCanvas);
   }
   drawCanvas();
-
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, idx) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
           entry.target.classList.add('visible');
-        }, i * 60);
-        observer.unobserve(entry.target);
+        }, idx * 60);
+        revealObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.08 });
-  reveals.forEach(el => observer.observe(el));
+  reveals.forEach(el => revealObserver.observe(el));
 
+</script>
+
+<script>
+  // Email obfuscation - assembles email at runtime to avoid scrapers
+  (function() {
+    var u = 'koushikrangu';
+    var d = 'gmail.com';
+    var email = u + '@' + d;
+    var mailto = 'mailto:' + email;
+    var links = document.querySelectorAll('.email-link');
+    links.forEach(function(el) { el.href = mailto; });
+    var display = document.getElementById('email-display');
+    if (display) display.textContent = email;
+    var aboutEmail = document.getElementById('about-email');
+    if (aboutEmail) aboutEmail.textContent = email;
+  })();
 </script>
 </body>
 </html>
