@@ -452,6 +452,10 @@
     position: relative;
     overflow: hidden;
     transition: all 0.4s;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: none;
   }
 
   .project-card:hover {
@@ -1043,68 +1047,25 @@
     <h2 class="section-title">What I've Built</h2>
   </div>
   <div class="projects-grid">
-    <div class="project-card reveal">
+    <a class="project-card reveal" href="https://github.com/Koushik050/sql-chatbot" target="_blank">
       <div class="project-num">01</div>
-      <h3 class="project-title">Conversational RAG Chatbot with Memory</h3>
-      <p class="project-desc">
-        A production-style RAG chatbot using LangChain that answers queries using external web-based knowledge. 
-        Supports multi-turn conversations with history-aware retrievers, reducing hallucinations significantly.
-      </p>
-      <div class="project-tech">
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">LangChain</span>
-        <span class="tech-badge">Groq LLM</span>
-        <span class="tech-badge">Chroma</span>
-        <span class="tech-badge">HuggingFace</span>
-        <span class="tech-badge">LLaMA-3</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/Koushik050" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
-      </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">02</div>
-      <h3 class="project-title">AI Search Assistant using LangChain Agents</h3>
-      <p class="project-desc">
-        An AI-powered conversational assistant using LangChain Agents and Groq-hosted LLMs. Integrates 
-        DuckDuckGo, Wikipedia, and ArXiv tools. Uses Zero-Shot ReAct agent for dynamic tool selection.
-      </p>
-      <div class="project-tech">
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">LangChain</span>
-        <span class="tech-badge">Streamlit</span>
-        <span class="tech-badge">Groq LLM</span>
-        <span class="tech-badge">ReAct Agent</span>
-        <span class="tech-badge">DuckDuckGo</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/Koushik050" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
-      </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">03</div>
       <h3 class="project-title">SQL Chatbot</h3>
-      <p class="project-desc">
-        AI chatbot that allows users to query databases using natural language. Converts user questions 
-        into SQL queries automatically, executes them on a connected database, and returns results.
-      </p>
+      <p class="project-desc">AI chatbot that lets users query databases using natural language. Automatically converts questions into SQL queries, executes them on a connected database, and returns results — demonstrating LLM + SQL integration.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">LLM</span>
         <span class="tech-badge">SQL</span>
         <span class="tech-badge">NLP</span>
+        <span class="tech-badge">Database</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/sql-chatbot" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">04</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/rag-pdf-query" target="_blank">
+      <div class="project-num">02</div>
       <h3 class="project-title">RAG PDF Query System</h3>
-      <p class="project-desc">
-        Implements a Retrieval Augmented Generation (RAG) system for PDFs. Uses text chunking, 
-        embeddings, and vector similarity search to retrieve relevant context and generate LLM-powered answers.
-      </p>
+      <p class="project-desc">Retrieval Augmented Generation (RAG) system for PDFs. Uses text chunking, embeddings, and vector similarity search to retrieve relevant context and generate accurate LLM-powered answers from documents.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">RAG</span>
@@ -1113,16 +1074,13 @@
         <span class="tech-badge">LLM</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/rag-pdf-query" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">05</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/Youtube-video-summarizer" target="_blank">
+      <div class="project-num">03</div>
       <h3 class="project-title">YouTube Video Summarizer</h3>
-      <p class="project-desc">
-        AI tool that generates concise summaries of YouTube videos by extracting transcripts/captions 
-        and applying NLP models to distill long content into key points.
-      </p>
+      <p class="project-desc">AI tool that generates concise summaries of YouTube videos by extracting transcripts/captions and applying NLP models to distill long content into key points.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">NLP</span>
@@ -1130,16 +1088,13 @@
         <span class="tech-badge">Transformers</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/Youtube-video-summarizer" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">06</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/news-summarizer-tts" target="_blank">
+      <div class="project-num">04</div>
       <h3 class="project-title">News Summarizer with TTS</h3>
-      <p class="project-desc">
-        AI system that summarizes news articles and converts them into speech using Text-to-Speech 
-        synthesis. Combines NLP summarization and speech technology for audio news delivery.
-      </p>
+      <p class="project-desc">AI system that summarizes news articles and converts them into speech using Text-to-Speech synthesis — combining NLP summarization and speech technology for audio news delivery.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">NLP</span>
@@ -1147,16 +1102,13 @@
         <span class="tech-badge">Summarization</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/news-summarizer-tts" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">07</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/Hotel-Bar-Inventory-Forecasting" target="_blank">
+      <div class="project-num">05</div>
       <h3 class="project-title">Hotel Bar Inventory Forecasting</h3>
-      <p class="project-desc">
-        ML project forecasting bar inventory demand using historical data to predict future stock 
-        requirements, reduce wastage, and optimize inventory planning.
-      </p>
+      <p class="project-desc">ML project forecasting bar inventory demand using historical data to predict future stock requirements, reduce wastage, and optimize inventory planning.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Pandas</span>
@@ -1164,16 +1116,13 @@
         <span class="tech-badge">Forecasting</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/Hotel-Bar-Inventory-Forecasting" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">08</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/Fraud-Detection-in-Financial-transactions" target="_blank">
+      <div class="project-num">06</div>
       <h3 class="project-title">Fraud Detection in Financial Transactions</h3>
-      <p class="project-desc">
-        ML model to detect fraudulent financial transactions using classification algorithms. Handles 
-        imbalanced datasets common in fraud detection with robust feature engineering.
-      </p>
+      <p class="project-desc">ML model to detect fraudulent financial transactions using classification algorithms. Handles imbalanced datasets common in fraud detection with robust feature engineering and evaluation metrics.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Scikit-learn</span>
@@ -1181,16 +1130,13 @@
         <span class="tech-badge">Feature Engineering</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/Fraud-Detection-in-Financial-transactions" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">09</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/Predictive-Maintainence-of-industrial-Equipment" target="_blank">
+      <div class="project-num">07</div>
       <h3 class="project-title">Predictive Maintenance of Industrial Equipment</h3>
-      <p class="project-desc">
-        Predictive maintenance system using sensor data to forecast potential equipment failures, 
-        reduce downtime and maintenance costs with anomaly detection algorithms.
-      </p>
+      <p class="project-desc">Predictive maintenance system using sensor data to forecast potential equipment failures, helping reduce downtime and maintenance costs through ML-based anomaly detection.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">ML</span>
@@ -1198,16 +1144,13 @@
         <span class="tech-badge">Sensor Data</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/Predictive-Maintainence-of-industrial-Equipment" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">10</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/flowers_image_classification" target="_blank">
+      <div class="project-num">08</div>
       <h3 class="project-title">Flower Image Classification</h3>
-      <p class="project-desc">
-        Deep learning project training a CNN to classify flower images into categories. 
-        Demonstrates computer vision techniques using TensorFlow/Keras.
-      </p>
+      <p class="project-desc">Deep learning project training a CNN to classify flower images into categories. Demonstrates computer vision techniques using TensorFlow/Keras.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">TensorFlow</span>
@@ -1216,16 +1159,13 @@
         <span class="tech-badge">Computer Vision</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/flowers_image_classification" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">11</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/HR-ANALYTICS" target="_blank">
+      <div class="project-num">09</div>
       <h3 class="project-title">HR Analytics — Attrition Prediction</h3>
-      <p class="project-desc">
-        Data analysis project predicting employee attrition using HR datasets. Identifies key factors 
-        affecting turnover through data cleaning, visualization, and ML modeling.
-      </p>
+      <p class="project-desc">Data analysis project predicting employee attrition using HR datasets. Identifies key factors affecting turnover through data cleaning, visualization, and ML modeling to improve retention strategies.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Pandas</span>
@@ -1233,16 +1173,13 @@
         <span class="tech-badge">Data Visualization</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/HR-ANALYTICS" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">12</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/Cars-Selling-Price-Prediction" target="_blank">
+      <div class="project-num">10</div>
       <h3 class="project-title">Cars Selling Price Prediction</h3>
-      <p class="project-desc">
-        ML regression model predicting car selling prices using features like age, mileage, and fuel type. 
-        Includes feature engineering and model evaluation with Scikit-learn.
-      </p>
+      <p class="project-desc">ML regression model predicting car selling prices using features like age, mileage, and fuel type. Includes feature engineering and model evaluation with Scikit-learn.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Scikit-learn</span>
@@ -1250,16 +1187,13 @@
         <span class="tech-badge">Feature Engineering</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/Cars-Selling-Price-Prediction" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">13</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/Twitter-analytics-dash-board" target="_blank">
+      <div class="project-num">11</div>
       <h3 class="project-title">Twitter Analytics Dashboard</h3>
-      <p class="project-desc">
-        Data analytics dashboard for analyzing Twitter data, extracting insights like tweet frequency, 
-        engagement metrics, and trend visualizations for social media analysis.
-      </p>
+      <p class="project-desc">Data analytics dashboard for analyzing Twitter data, extracting insights like tweet frequency, engagement metrics, and trend visualizations for public sentiment analysis.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Data Analysis</span>
@@ -1267,59 +1201,77 @@
         <span class="tech-badge">Twitter API</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/Twitter-analytics-dash-board" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">14</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/Car-Rental-System" target="_blank">
+      <div class="project-num">12</div>
       <h3 class="project-title">Car Rental System</h3>
-      <p class="project-desc">
-        Java-based application for managing car rental operations — booking, renting, and returning vehicles. 
-        Demonstrates object-oriented programming concepts with customer and vehicle management.
-      </p>
+      <p class="project-desc">Java-based application for managing car rental operations — booking, renting, and returning vehicles. Demonstrates OOP concepts with customer and vehicle availability management.</p>
       <div class="project-tech">
         <span class="tech-badge">Java</span>
         <span class="tech-badge">OOP</span>
         <span class="tech-badge">Database</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/Car-Rental-System" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">15</div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/SNAKE-GAME" target="_blank">
+      <div class="project-num">13</div>
       <h3 class="project-title">Snake Game</h3>
-      <p class="project-desc">
-        Classic Snake game implemented in Python with graphics and keyboard input. Demonstrates 
-        fundamental game development logic, loops, collision detection, and real-time rendering.
-      </p>
+      <p class="project-desc">Classic Snake game implemented in Python with graphics and keyboard input. Demonstrates fundamental game development logic, loops, and collision detection.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Pygame</span>
         <span class="tech-badge">Game Dev</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/SNAKE-GAME" class="proj-link" target="_blank">→ VIEW ON GITHUB</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">16</div>
-      <h3 class="project-title">Oasis Infobyte Internship Projects</h3>
-      <p class="project-desc">
-        Two data science projects completed under the Oasis Infobyte internship program, demonstrating 
-        practical ML techniques including data preprocessing, model development, and analytical workflows.
-      </p>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/OIBSIP-Task-1" target="_blank">
+      <div class="project-num">14</div>
+      <h3 class="project-title">OIBSIP Task 1 — Internship Project</h3>
+      <p class="project-desc">Internship project under the Oasis Infobyte program applying machine learning techniques to real datasets — includes dataset analysis, model development, and early-stage AI/ML workflows.</p>
+      <div class="project-tech">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">ML</span>
+        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">Data Science</span>
+      </div>
+      <div class="project-links">
+        <span class="proj-link">→ VIEW ON GITHUB</span>
+      </div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/OIBSIP-Task-2" target="_blank">
+      <div class="project-num">15</div>
+      <h3 class="project-title">OIBSIP Task 2 — Internship Project</h3>
+      <p class="project-desc">Second internship project under the Oasis Infobyte program demonstrating practical data science concepts with data preprocessing and structured analytical workflows.</p>
       <div class="project-tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Data Science</span>
         <span class="tech-badge">ML</span>
-        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">Preprocessing</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/Koushik050/OIBSIP-Task-1" class="proj-link" target="_blank">→ TASK 1</a>
-        <a href="https://github.com/Koushik050/OIBSIP-Task-2" class="proj-link" target="_blank">→ TASK 2</a>
+        <span class="proj-link">→ VIEW ON GITHUB</span>
       </div>
-    </div>
+    </a>
+    <a class="project-card reveal" href="https://github.com/Koushik050/koushik050.github.io" target="_blank">
+      <div class="project-num">16</div>
+      <h3 class="project-title">Portfolio Website</h3>
+      <p class="project-desc">Personal GitHub Pages portfolio website showcasing projects, skills, and contact information. Built with HTML, CSS, and static web technologies, deployed via GitHub Pages.</p>
+      <div class="project-tech">
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">GitHub Pages</span>
+      </div>
+      <div class="project-links">
+        <span class="proj-link">→ VIEW ON GITHUB</span>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -1455,8 +1407,8 @@
     <h2 class="contact-title">Let's <span style="background: linear-gradient(135deg, var(--teal), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Connect</span></h2>
     <p class="contact-sub">Open to full-time roles, internships & collaborations</p>
     <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#600b0f151308090b12010e071520070d01090c4e030f0d" class="contact-link">
-        <span>✉</span> <span class="__cf_email__" data-cfemail="fe95918b8d9697958c9f90998bbe99939f9792d09d9193">[email&#160;protected]</span>
+      <a href="mailto:koushikrangu@gmail.com" class="contact-link">
+        <span>✉</span> koushikrangu@gmail.com
       </a>
       <a href="tel:+918074034699" class="contact-link">
         <span>📞</span> +91 8074034699
